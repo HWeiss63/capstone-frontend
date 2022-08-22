@@ -10,6 +10,7 @@
     |
     <router-link to="/logout">Logout</router-link>
   </nav>
+
   <router-view />
 </template>
 
