@@ -27,6 +27,7 @@ export default {
 <template>
   <div class="signup">
     <form v-on:submit.prevent="submit()">
+      <br />
       <h1>Sign up</h1>
       <ul>
         <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
@@ -35,19 +36,23 @@ export default {
         <label>Name:</label>
         <input type="text" v-model="newUserParams.name" />
       </div>
+      <br />
       <div>
         <label>Email:</label>
         <input type="email" v-model="newUserParams.email" />
       </div>
+      <br />
       <div>
         <label>Password:</label>
         <input type="password" v-model="newUserParams.password" />
       </div>
+      <br />
       <div>
         <label>Password confirmation:</label>
         <input type="password" v-model="newUserParams.password_confirmation" />
       </div>
-      <input type="submit" value="Submit" />
+      <br />
+      <input type="submit" class="btn btn-warning" value="Submit" />
     </form>
   </div>
 </template>

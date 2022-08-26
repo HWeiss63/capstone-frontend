@@ -6,9 +6,7 @@ import "vue-cal/dist/vuecal.css";
 export default {
   components: { VueCal },
   data: function () {
-    return {
-      // events: [],
-    };
+    return {};
   },
   created: function () {
     // this.eventsIndex();
@@ -27,13 +25,18 @@ export default {
 <template>
   <div class="calendar">
     <vue-cal
+      ref="vuecal"
       :time-from="8 * 60"
-      :time-to="19 * 60"
-      :time-step="30"
+      :time-to="23 * 60"
       style="height: 600px"
-      :disable-views="['years']"
+      :disable-views="['years', 'day']"
       active-view="month"
       :events="events"
+      events-on-month-view="short"
+      :cell-click-hold="false"
+      :drag-to-create-event="false"
+      editable-events
+      @cell-dblclick="$refs.vuecal.createEvent($event, 120, { title: 'New Event', class: 'blue-event' })"
     />
   </div>
 </template>
@@ -54,5 +57,8 @@ export default {
 }
 .vuecal--month-view .vuecal__no-event {
   display: none;
+}
+.vuecal__event {
+  background-color: rgba(76, 172, 175, 0.35);
 }
 </style>

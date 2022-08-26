@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-light">
+  <nav class="navbar navbar-expand-lg bg-warning">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">Forty Weeks</a>
       <button
