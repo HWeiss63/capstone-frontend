@@ -2,7 +2,10 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import CalendarView from "../views/CalendarView.vue";
 import ChecklistView from "../views/ChecklistView.vue";
-import TipView from "../views/TipView.vue";
+import GestationaldiabetesView from "../views/GestationaldiabetesView.vue";
+import EathealthyView from "../views/EathealthyView.vue";
+import PreeclampsiaView from "../views/PreeclampsiaView.vue";
+import StayactiveView from "../views/StayactiveView.vue";
 import SignupView from "../views/SignupView.vue";
 import LoginView from "../views/LoginView";
 import LogoutView from "../views/LogoutView";
@@ -32,9 +35,24 @@ const routes = [
     component: ChecklistView,
   },
   {
-    path: "/tip",
-    name: "tip",
-    component: TipView,
+    path: "/gestationaldiabetes",
+    name: "gestationaldiabetes",
+    component: GestationaldiabetesView,
+  },
+  {
+    path: "/eathealthy",
+    name: "eathealthy",
+    component: EathealthyView,
+  },
+  {
+    path: "/preeclampsia",
+    name: "preeclampsia",
+    component: PreeclampsiaView,
+  },
+  {
+    path: "/stayactive",
+    name: "stayactive",
+    component: StayactiveView,
   },
   {
     path: "/signup",
