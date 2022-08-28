@@ -31,8 +31,7 @@ export default {
   <div class="home">
     <h1>{{ message }}</h1>
     <h3>{{ sas.title }}</h3>
-    <p>{{ sas.content }}</p>
-    <!-- <div v-for="gd in gds" v-bind:key="gd.total"></div> -->
+    <div v-html="sas.content"></div>
   </div>
 </template>
 
