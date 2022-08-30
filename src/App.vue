@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-warning">
+  <nav class="navbar navbar-expand-lg" style="background-color: #ffbb33">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">Forty Weeks</a>
       <button
@@ -89,17 +89,13 @@ nav {
   padding: 30px;
 }
 
-nav a {
+.nav-link {
   font-weight: bold;
-  color: #2c3e50;
+  color: #fff !important;
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
-}
-
-.navbar {
-  background-color: #ff8d5c;
-  color: white;
+.navbar-brand {
+  font-weight: bold;
+  color: white !important;
 }
 </style>
