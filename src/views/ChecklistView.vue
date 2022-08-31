@@ -38,29 +38,29 @@ export default {
       </h1>
 
       <br />
-      <h3 class="category">Nursery</h3>
       <br />
       <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div v-for="(value, name, index) in formattedChecklist" v-bind:key="index">{{ name }}</div>
-        <div class="col" v-for="checklist in checklists" v-bind:key="checklist.id">
-          <div>
-            <input type="checkbox" v-bind:id="checklist.id" />
-            <label v-bind:for="checklist.id">
-              <div><i class="fa fa-check"></i></div>
-              {{ checklist.item_name }}
-            </label>
+        <div v-for="(value, name, index) in formattedChecklist" v-bind:key="index">
+          {{ name }}
+          <hr />
+          <div v-for="itemname in value" :key="itemname.id">
+            <div>
+              <input type="checkbox" v-bind:id="itemname.id" />
+              <label v-bind:for="itemname.id">
+                <div><i class="fa fa-check"></i></div>
+                {{ itemname.item_name }}
+              </label>
+            </div>
           </div>
         </div>
       </div>
       <br />
+      <input type="submit" class="btn btn-warning" value="Save" />
     </div>
   </div>
 </template>
 
 <style scoped>
-.category {
-  color: #ffbb33;
-}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
