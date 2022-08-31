@@ -55,7 +55,7 @@ export default {
         </div>
       </div>
       <br />
-      <input type="submit" class="btn btn-warning" value="Save" />
+      <button type="submit" class="btn btn-warning">Save</button>
     </div>
   </div>
 </template>
