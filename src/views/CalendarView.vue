@@ -22,10 +22,11 @@ export default {
         console.log("events index", response);
         this.events = response.data;
         for (let i = 0; i < response.data.length; i++) {
+          // console.log(response.data[i]);
           let event = {
             title: response.data[i].title,
-            start: moment(response.data[i].start).format("YYYY-MM-DD H:mm"),
-            end: moment(response.data[i].end).format("YYYY-MM-DD H:mm"),
+            start: moment.utc(response.data[i].start).format("YYYY-MM-DD H:mm"),
+            end: moment.utc(response.data[i].end).format("YYYY-MM-DD H:mm"),
           };
           console.log(event);
           this.formattedEvents.push(event);
@@ -85,6 +86,6 @@ export default {
   display: none;
 }
 .vuecal__event {
-  background-color: rgba(255, 213, 0, 0.35);
+  background-color: #fad3d2;
 }
 </style>

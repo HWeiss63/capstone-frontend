@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg" style="background-color: #ffbb33">
+  <nav class="navbar navbar-expand-lg" style="background-color: #ff6763">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">Forty Weeks</a>
       <button
