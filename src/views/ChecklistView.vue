@@ -32,6 +32,10 @@ export default {
     test: function (item) {
       console.log("test", item);
     },
+    submit: function () {
+      axios.post("/checklists", this.formattedChecklist);
+      console.log(this.formattedChecklist);
+    },
     // responsesIndex: function () {
     //   axios.get("/responses").then((response) => {
     //     console.log("responses index", response);
@@ -70,12 +74,6 @@ export default {
           <hr />
           <div v-for="itemname in value" :key="itemname.checklist.id">
             <div>
-              <!-- <input
-                type="checkbox"
-                :value="false"
-                @input="(event) => (itemname.answer = event.target.value)"
-                :checked="itemname.answer"
-              /> -->
               <input type="checkbox" v-model="itemname.answer" v-bind:id="itemname.checklist.id" />
               <label v-bind:for="itemname.checklist.id">
                 <div><i class="fa fa-check"></i></div>
@@ -86,7 +84,7 @@ export default {
         </div>
       </div>
       <br />
-      <a type="submit" class="btn">Save</a>
+      <a v-on:click="submit" type="submit" class="btn">Save</a>
       <!-- </form> -->
     </div>
   </div>
