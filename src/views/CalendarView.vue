@@ -57,6 +57,7 @@ export default {
       :time-to="23 * 60"
       style="height: 600px"
       :disable-views="['years', 'day']"
+      today-button
       active-view="month"
       :events="formattedEvents"
       events-on-month-view="short"

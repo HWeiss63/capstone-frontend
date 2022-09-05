@@ -95,7 +95,7 @@ export default {
 
 <style scoped>
 .btn {
-  color: black;
+  color: #0e1111;
   background-color: #ff6763;
 }
 .mx-auto {
@@ -110,17 +110,17 @@ h2 {
   margin-bottom: 50px;
 }
 a {
-  color: #000000;
+  color: #0e1111;
 }
 a:hover {
-  color: #ff8800;
+  color: #ff6763;
 }
 
 /*WRAPPER*/
 #wrapper {
   height: 100vh;
   background: #fff;
-  color: #000000;
+  color: #0e1111;
   font-family: "Gloria Hallelujah", cursive;
   font-size: 18px;
 }
@@ -137,7 +137,7 @@ label div {
   width: 23px;
   height: 23px;
   display: inline-block;
-  border: 2px solid #000000;
+  border: 2px solid #0e1111;
   text-align: center;
   line-height: 20px;
   margin-right: 6px;
