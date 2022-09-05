@@ -93,4 +93,32 @@ export default {
 .vuecal__event {
   background-color: #fad3d2;
 }
+
+/* Pink-theme. */
+.vuecal__menu,
+.vuecal__cell-events-count {
+  background-color: #ff9490;
+}
+.vuecal__title-bar {
+  background-color: #f4e2e2;
+}
+.vuecal__cell--today,
+.vuecal__cell--current {
+  background-color: #fbeeed;
+}
+.vuecal:not(.vuecal--day-view) .vuecal__cell--selected {
+  background-color: #fbeeed;
+}
+.vuecal__cell--selected:before {
+  border-color: #d99d99;
+}
+/* Cells and buttons get highlighted when an event is dragged over it. */
+.vuecal__cell--highlighted:not(.vuecal__cell--has-splits),
+.vuecal__cell-split--highlighted {
+  background-color: #fbeeed;
+}
+.vuecal__arrow.vuecal__arrow--highlighted,
+.vuecal__view-btn.vuecal__view-btn--highlighted {
+  background-color: #fbeeed;
+}
 </style>
