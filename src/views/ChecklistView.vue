@@ -14,9 +14,9 @@ export default {
   },
   methods: {
     checklistsIndex: function () {
-      console.log("hey");
       axios.get("/checklists").then((response) => {
         // console.log("checklists index", response);
+        this.formattedChecklist = {};
         for (let i = 0; i < response.data.length; i++) {
           // console.log(response.data[i]);
           if (this.formattedChecklist[response.data[i]["checklist"]["category"]]) {
@@ -33,7 +33,10 @@ export default {
       console.log("test", item);
     },
     submit: function () {
-      axios.post("/checklists", this.formattedChecklist);
+      axios.post("/responses", { data: this.formattedChecklist }).then((response) => {
+        console.log(response.data);
+        this.checklistsIndex();
+      });
       console.log(this.formattedChecklist);
     },
     // responsesIndex: function () {
