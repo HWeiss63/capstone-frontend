@@ -69,6 +69,11 @@ export default {
 </template>
 
 <style>
+.calendar {
+  padding-top: 3em;
+  padding-left: 6em;
+  padding-right: 6em;
+}
 .vuecal--month-view .vuecal__cell {
   height: 80px;
 }
