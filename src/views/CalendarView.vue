@@ -74,6 +74,7 @@ export default {
   padding-top: 3em;
   padding-left: 6em;
   padding-right: 6em;
+  padding-bottom: 3em;
 }
 .vuecal--month-view .vuecal__cell {
   height: 80px;
