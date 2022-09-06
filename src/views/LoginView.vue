@@ -68,7 +68,7 @@ export default {
   </div>
 </template>
 
-<style>
+<style scoped>
 body {
   color: #999;
   background: #f3f3f3;
