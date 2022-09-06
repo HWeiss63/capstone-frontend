@@ -28,11 +28,6 @@ export default {
 </script>
 
 <template>
-  <!-- <div class="home">
-    <h1>{{ message }}</h1>
-    <h3>{{ ehs.title }}</h3>
-    <div v-html="ehs.content"></div>
-  </div> -->
   <div class="eathealthy">
     <form action="/examples/actions/confirmation.php" method="post" class="form-horizontal">
       <div class="row">
