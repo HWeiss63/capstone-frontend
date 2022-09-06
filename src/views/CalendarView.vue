@@ -35,8 +35,9 @@ export default {
     },
     // eventCreate: function () {
     //   axios
-    //     .post("/events", this.newEvent)
+    //     .post("/events")
     //     .then((response) => {
+    //       this.newEvent = {};
     //       console.log("event create", response);
     //       this.$router.push("/events");
     //     })
