@@ -27,14 +27,7 @@ export default {
 </script>
 
 <template>
-  <!-- <div class="main">
-    <div class="overlay">
-      <h1>{{ message }}</h1>
-      <h3>{{ gds.title }}</h3>
-      
-    </div>
-  </div> -->
-  <div class="signup-form">
+  <div class="diabetes">
     <form action="/examples/actions/confirmation.php" method="post" class="form-horizontal">
       <div class="row">
         <div class="col-8 offset-4">
@@ -55,19 +48,19 @@ body {
   background: #f3f3f3;
   font-family: "Roboto", sans-serif;
 }
-.signup-form {
+.diabetes {
   width: 1000px;
   margin: 0 auto;
   padding: 30px 0;
 }
-.signup-form h2 {
+.diabetes h2 {
   color: #333;
   margin: 0 0 30px 0;
   display: inline-block;
   padding: 0 30px 10px 0;
   border-bottom: 3px solid #ff6763;
 }
-.signup-form form {
+.diabetes form {
   color: #333;
   border-radius: 3px;
   margin-bottom: 15px;
@@ -75,10 +68,10 @@ body {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
   padding: 30px;
 }
-.signup-form .form-group row {
+.diabetes .form-group row {
   margin-bottom: 20px;
 }
-.signup-form label {
+.diabetes label {
   font-weight: normal;
   font-size: 14px;
   line-height: 2;
