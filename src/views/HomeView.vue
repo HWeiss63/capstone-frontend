@@ -22,6 +22,6 @@ export default {
 <style>
 .home {
   background: #fcfcfb;
-  padding-top: 5em;
+  padding: 0.5em;
 }
 </style>
