@@ -31,7 +31,7 @@ export default {
     <div class="overlay">
       <h1>{{ message }}</h1>
       <h3>{{ gds.title }}</h3>
-      <div v-html="gds.content"></div>
+      
     </div>
   </div> -->
   <div class="signup-form">
@@ -42,7 +42,8 @@ export default {
         </div>
       </div>
       <div class="form-group row">
-        <h3 class="col-form-label col-4">{{ gds.title }}</h3>
+        <!-- <p class="col-form-label">{{ gds.title }}</p> -->
+        <div v-html="gds.content"></div>
       </div>
     </form>
   </div>
@@ -54,18 +55,6 @@ body {
   background: #f3f3f3;
   font-family: "Roboto", sans-serif;
 }
-.form-control {
-  border-color: #eee;
-  min-height: 41px;
-  box-shadow: none !important;
-}
-.form-control:focus {
-  border-color: #5cd3b4;
-}
-/* .form-control,
-.btn {
-  border-radius: 3px;
-} */
 .signup-form {
   width: 1000px;
   margin: 0 auto;
@@ -80,8 +69,8 @@ body {
 }
 .signup-form form {
   color: #333;
-  /* border-radius: 3px; */
-  /* margin-bottom: 15px; */
+  border-radius: 3px;
+  margin-bottom: 15px;
   background: #fff;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
   padding: 30px;
@@ -94,23 +83,4 @@ body {
   font-size: 14px;
   line-height: 2;
 }
-/* .signup-form .btn:hover,
-.signup-form .btn:focus {
-  background: #41cba9;
-  outline: none !important;
-}
-.signup-form a {
-  color: #5cd3b4;
-  text-decoration: underline;
-}
-.signup-form a:hover {
-  text-decoration: none;
-}
-.signup-form form a {
-  color: #5cd3b4;
-  text-decoration: none;
-}
-.signup-form form a:hover {
-  text-decoration: underline;
-} */
 </style>
