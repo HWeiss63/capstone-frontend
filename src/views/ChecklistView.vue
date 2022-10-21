@@ -39,24 +39,6 @@ export default {
       });
       console.log(this.formattedChecklist);
     },
-    // responsesIndex: function () {
-    //   axios.get("/responses").then((response) => {
-    //     console.log("responses index", response);
-    //     this.responses = response.data;
-    //   });
-    // },
-    // updateResponse: function () {
-    //   axios
-    //     .get("/responses/" + this.responses.id + ".json")
-    //     .then((response) => {
-    //       console.log("responses update", response);
-    //       this.$router.push("/checklist"); //??? assume this line will lead the page to checklist?
-    //     })
-    //     .catch((error) => {
-    //       console.log("responses update error", error.response);
-    //       this.errors = error.response.data.errors;
-    //     });
-    // },
   },
 };
 </script>
@@ -68,7 +50,6 @@ export default {
         Did you buy this yet?
         <i class="fa fa-check"></i>
       </h1>
-      <!-- <form v-on:submit.prevent="updateResponse()"> -->
       <br />
       <br />
       <div class="row row-cols-1 row-cols-md-2 g-4">
@@ -88,7 +69,6 @@ export default {
       </div>
       <br />
       <a v-on:click="submit" type="submit" class="btn">Save</a>
-      <!-- </form> -->
     </div>
   </div>
 </template>
