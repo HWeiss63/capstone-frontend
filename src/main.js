@@ -5,8 +5,7 @@ import axios from "axios";
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-axios.defaults.baseURL =
-  process.env.NODE_ENV === "development" ? "http://localhost:3000" : "https://cold-cherry-2458.fly.dev";
+axios.defaults.baseURL = process.env.NODE_ENV === "development" ? "http://localhost:3000" : "/";
 
 var jwt = localStorage.getItem("jwt");
 if (jwt) {
