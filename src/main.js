@@ -5,7 +5,8 @@ import axios from "axios";
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-axios.defaults.baseURL = process.env.NODE_ENV === "development" ? "https://crimson-frost-8128.fly.dev/" : "/";
+axios.defaults.baseURL =
+  process.env.NODE_ENV === "development" ? "https://crimson-frost-8128.fly.dev/" : "http://localhost:3000";
 
 var jwt = localStorage.getItem("jwt");
 if (jwt) {
