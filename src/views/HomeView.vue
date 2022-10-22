@@ -2,7 +2,7 @@
 export default {
   data: function () {
     return {
-      message: "Welcome to Forty Weeks!",
+      message: "Please login first -> email: baby@test.com // password: password",
     };
   },
   created: function () {},
@@ -13,8 +13,8 @@ export default {
 <template>
   <div class="home">
     <div class="text-center">
+      <p>{{ message }}</p>
       <img src="https://res.cloudinary.com/hweiss/image/upload/v1662315354/main_image_w417by.jpg" class="img-fluid" />
-      <!-- <h1>{{ message }}</h1> -->
     </div>
   </div>
 </template>
